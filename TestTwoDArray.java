@@ -1,5 +1,6 @@
 import java.util.Scanner;
 class TwoDArray{
+	
     public static int[][] readIntegerArray(int r ,int c){
         Scanner sc=new Scanner(System.in);
         int[][] a=new int[r][c];
@@ -10,6 +11,7 @@ class TwoDArray{
         }
         return a;
     }
+	
     public static double[][] readDoubleArray(int r ,int c){
         Scanner sc=new Scanner(System.in);
         double[][] a=new double[r][c];
@@ -20,6 +22,7 @@ class TwoDArray{
         }
         return a;
     }
+	
     public static boolean[][] readBooleanArray(int r ,int c){
         Scanner sc=new Scanner(System.in);
         boolean[][] a=new boolean[r][c];
@@ -30,6 +33,7 @@ class TwoDArray{
         }
         return a;
     }
+	
     public static void printArray(int a[][],int r,int c){
          for(int i=0;i<r;i++){
             for(int j=0;j<c;j++){
@@ -38,6 +42,7 @@ class TwoDArray{
         System.out.println();
         }
     }
+	
     public static void printArray(double a[][],int r,int c){
          for(int i=0;i<r;i++){
             for(int j=0;j<c;j++){
@@ -54,9 +59,7 @@ class TwoDArray{
             }
         System.out.println();
         }
-    }
-    
-    
+    }   
 }
 public class TestTwoDArray
 {
@@ -78,7 +81,7 @@ public class TestTwoDArray
 		r=sc.nextInt();
 		c=sc.nextInt();
 		System.out.println("Enter double elements :");
-	    double dArray[][]=TwoDArray.readDoubleArray(r,c);
+	    	double dArray[][]=TwoDArray.readDoubleArray(r,c);
 		System.out.println("double 2D-array elements are :");
 		TwoDArray.printArray(dArray,r,c);
 			
